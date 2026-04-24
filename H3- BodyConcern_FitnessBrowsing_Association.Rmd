@@ -24,3 +24,8 @@ d_rednote <- d_rednote %>%
   )
 ```
 
+```{r}
+table(d_rednote$Body_Image_Group, d_rednote$Content_Preference)
+```
+
+
