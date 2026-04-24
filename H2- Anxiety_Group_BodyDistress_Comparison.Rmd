@@ -1,0 +1,19 @@
+---
+title: "H2- Anxiety_Group_BodyDistress_Comparison"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(dplyr)
+library(readr)
+library(ggplot2)
+
+d_rednote <- read.csv('../data/RedNote_Survey.csv')
+```
+
+
+# Hypothesis 2
+Users with high anxiety levels experienced significantly higher levels of body ideological distress after browsing Xiaohongshu compared to users with low anxiety levels.
+
