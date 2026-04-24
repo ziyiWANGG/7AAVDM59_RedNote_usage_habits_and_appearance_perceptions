@@ -34,3 +34,12 @@ chisq.test(
   d_rednote$Content_Preference
 )
 ```
+
+
+# Findings
+
+A chi-square test revealed a significant association between body image distress group and content preference on RedNote, χ²(1, N = 101) = 9.31, p = .002.
+
+Users with high body image distress were more likely to prefer appearance-focused content, whereas users with low body image distress were more likely to prefer neutral content.
+
+This result supports Hypothesis 3.
