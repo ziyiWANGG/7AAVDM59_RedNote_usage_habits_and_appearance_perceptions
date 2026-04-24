@@ -15,6 +15,10 @@ d_rednote <- read.csv('../data/RedNote_Survey.csv')
 ```
 
 
+# Hypothesis 1
+The frequency of users’ engagement in appearance-related activities on RedNote (e.g., photo editing, posting selfies, actively following beauty / fitness / body-shaping bloggers, and browsing relevant content) is positively correlated with their level of body image distress.
+
+
 # Calculate descriptive statistics for key variables
 ```{r}
 d_rednote %>%
@@ -32,6 +36,7 @@ d_rednote %>%
     BSQ8A_Range = paste(min(BSQ8A_Total), "-", max(BSQ8A_Total))
   )
 ```
+
 
 # Calculate correlation
 ```{r}
@@ -81,10 +86,11 @@ ggplot(d_rednote, aes(x = Appearance_Activity_Total, y = BSQ8A_Total)) +
 ```
 
 
+
 # Findings
 
-The analysis of Pearson’s product-moment correlation revealed a **strong positive association** between users’ frequency of engaging in appearance-related activities on Xiaohongshu and their level of body image disturbance (BSQ-8A score).  
+The analysis of Pearson’s product-moment correlation revealed a strong positive association between users’ frequency of engaging in appearance-related activities on RedNote and their level of body image disturbance (BSQ-8A score).  
 
-Specifically, there was a statistically significant correlation between the two variables, *r*(99) = .60, *p* < .001, with the 95% confidence interval for the correlation coefficient ranging from .46 to .71. The magnitude of the correlation indicates a moderate-to-strong linear relationship: higher engagement in appearance-related activities (such as editing photos, posting selfies, and viewing beauty/fitness content) was associated with greater body image disturbance.  
+Specifically, there was a statistically significant correlation between the two variables, r(99) = .60, p < .001, with the 95% confidence interval for the correlation coefficient ranging from .46 to .71. The magnitude of the correlation indicates a moderate-to-strong linear relationship: higher engagement in appearance-related activities (such as editing photos, posting selfies, and viewing beauty/fitness content) was associated with greater body image disturbance.  
 
-This finding provides **strong support for Hypothesis 1**, as the data confirms the predicted positive association between appearance-related activity frequency and body image distress.
+This finding provides strong support for Hypothesis 1, as the data confirms the predicted positive association between appearance-related activity frequency and body image distress.
