@@ -28,4 +28,9 @@ d_rednote <- d_rednote %>%
 table(d_rednote$Body_Image_Group, d_rednote$Content_Preference)
 ```
 
-
+```{r}
+chisq.test(
+  d_rednote$Body_Image_Group,
+  d_rednote$Content_Preference
+)
+```
