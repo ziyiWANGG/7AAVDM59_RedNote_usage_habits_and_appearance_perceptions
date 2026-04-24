@@ -52,3 +52,31 @@ p_value <- round(correlation_result$p.value, 3)
 conf_int <- round(correlation_result$conf.int, 3)
 
 ```
+
+
+# Draw a scatter plot
+```{r}
+ggplot(d_rednote, aes(x = Appearance_Activity_Total, y = BSQ8A_Total)) +
+
+  geom_point(alpha = 0.6, size = 3, color = "#E1306C") +
+  
+  geom_smooth(method = "lm", se = TRUE, color = "#1DA1F2", linewidth = 1.2) +
+ 
+  labs(
+    title = "The Relationship Between the Frequency of Appearance-Related Activities on Xiaohongshu and the Level of Body Affectiveness",
+    subtitle = paste0("Pearson correlation coefficient r = ", r_value, ", p = ", p_value),
+    x = "Total score for frequency of participation in appearance-related activities",
+    y = "Total score of body intention distress(BSQ-8A)",
+  ) +
+  
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 16, face = "bold", hjust = 0.5),
+    plot.subtitle = element_text(size = 14, hjust = 0.5),
+    axis.title = element_text(size = 12, face = "bold"),
+    axis.text = element_text(size = 10)
+  ) +
+  
+  theme(panel.grid = element_line(alpha = 0.3))
+```
+
