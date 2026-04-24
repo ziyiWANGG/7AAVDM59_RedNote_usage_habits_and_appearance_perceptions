@@ -13,6 +13,14 @@ library(ggplot2)
 d_rednote <- read.csv('../data/RedNote_Survey.csv')
 ```
 
-
 # Hypothesis 3
 Users with high body image concerns are more likely to browse appearance-related content (weight loss/fitness).
+
+```{r}
+d_rednote <- d_rednote %>%
+  mutate(
+    Body_Image_Group = ifelse(BSQ8A_Total >= 26, "High_Distress", "Low_Distress"),
+    Content_Preference = ifelse(Appearance_Content_Score > median(Appearance_Content_Score), "Appearance_Focused", "Neutral")
+  )
+```
+
