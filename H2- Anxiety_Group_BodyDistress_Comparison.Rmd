@@ -17,3 +17,10 @@ d_rednote <- read.csv('../data/RedNote_Survey.csv')
 # Hypothesis 2
 Users with high anxiety levels experienced significantly higher levels of body ideological distress after browsing Xiaohongshu compared to users with low anxiety levels.
 
+# Grouping
+```{r}
+d_rednote <- d_rednote %>%
+  mutate(Anxiety_Group = ifelse(GAD7_Total <= 9, "Low_Anxiety", "High_Anxiety"))
+```
+
+
