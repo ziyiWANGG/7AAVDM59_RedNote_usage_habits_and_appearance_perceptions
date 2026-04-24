@@ -32,3 +32,9 @@ d_rednote %>%
   )
 ```
 
+```{r}
+t.test(
+  BSQ8A_Total ~ Anxiety_Group,
+  data = d_rednote
+)
+```
