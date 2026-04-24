@@ -38,3 +38,10 @@ t.test(
   data = d_rednote
 )
 ```
+
+
+# Findings
+
+High anxiety users showed significantly higher body image disturbance than low anxiety users. Specifically, the high anxiety group (M = 28.78, SD = 10.37) reported greater body image distress than the low anxiety group (M = 20.83, SD = 10.12), Welch’s t(52.96) = 3.55, p = .001. The 95% confidence interval for the mean difference ranged from 3.45 to 12.45.
+
+This finding supports Hypothesis 2.
