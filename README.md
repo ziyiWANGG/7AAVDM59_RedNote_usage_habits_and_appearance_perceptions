@@ -15,7 +15,6 @@ H3: Users with high body image distress are more likely to browse appearance-foc
 
 
 Measurement Scales:
-This study uses two validated scales:
 
 GAD‑7: Generalized Anxiety Disorder 7-item scale (used for anxiety level classification).
 Note: GAD‑7 scores are used for research grouping only and do not represent clinical diagnosis.
