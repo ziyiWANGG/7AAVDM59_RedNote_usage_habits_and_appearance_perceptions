@@ -80,3 +80,11 @@ ggplot(d_rednote, aes(x = Appearance_Activity_Total, y = BSQ8A_Total)) +
   theme(panel.grid = element_line(alpha = 0.3))
 ```
 
+
+# Findings
+
+The analysis of Pearson’s product-moment correlation revealed a **strong positive association** between users’ frequency of engaging in appearance-related activities on Xiaohongshu and their level of body image disturbance (BSQ-8A score).  
+
+Specifically, there was a statistically significant correlation between the two variables, *r*(99) = .60, *p* < .001, with the 95% confidence interval for the correlation coefficient ranging from .46 to .71. The magnitude of the correlation indicates a moderate-to-strong linear relationship: higher engagement in appearance-related activities (such as editing photos, posting selfies, and viewing beauty/fitness content) was associated with greater body image disturbance.  
+
+This finding provides **strong support for Hypothesis 1**, as the data confirms the predicted positive association between appearance-related activity frequency and body image distress.
