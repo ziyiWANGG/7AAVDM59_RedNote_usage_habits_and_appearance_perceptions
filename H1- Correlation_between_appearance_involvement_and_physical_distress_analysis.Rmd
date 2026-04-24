@@ -15,3 +15,21 @@ d_rednote <- read.csv('../data/RedNote_Survey.csv')
 ```
 
 
+# Calculate descriptive statistics for key variables
+```{r}
+d_rednote %>%
+  summarise(
+    # Statistics on the frequency of appearance-related activities
+    Appearance_Activity_M = round(mean(Appearance_Activity_Total), 2),
+    Appearance_Activity_SD = round(sd(Appearance_Activity_Total), 2),
+    Appearance_Activity_Mdn = round(median(Appearance_Activity_Total), 2),
+    Appearance_Activity_Range = paste(min(Appearance_Activity_Total), "-", max(Appearance_Activity_Total)),
+    
+    # Statistics on the degree of body intention distress
+    BSQ8A_M = round(mean(BSQ8A_Total), 2),
+    BSQ8A_SD = round(sd(BSQ8A_Total), 2),
+    BSQ8A_Mdn = round(median(BSQ8A_Total), 2),
+    BSQ8A_Range = paste(min(BSQ8A_Total), "-", max(BSQ8A_Total))
+  )
+```
+
