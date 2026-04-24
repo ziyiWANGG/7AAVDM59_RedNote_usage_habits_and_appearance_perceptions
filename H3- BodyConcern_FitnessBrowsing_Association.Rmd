@@ -3,3 +3,16 @@ title: "H3- BodyConcern_FitnessBrowsing_Association"
 output: html_document
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(dplyr)
+library(readr)
+library(ggplot2)
+
+d_rednote <- read.csv('../data/RedNote_Survey.csv')
+```
+
+
+# Hypothesis 3
+Users with high body image concerns are more likely to browse appearance-related content (weight loss/fitness).
