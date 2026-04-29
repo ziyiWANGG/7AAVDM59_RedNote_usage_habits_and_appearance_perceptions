@@ -20,3 +20,4 @@ GAD‑7: Generalized Anxiety Disorder 7-item scale (used for anxiety level class
 Note: GAD‑7 scores are used for research grouping only and do not represent clinical diagnosis.
 
 BSQ‑8A: Body Shape Questionnaire 8A (used to measure body image distress).
+
