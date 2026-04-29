@@ -60,6 +60,13 @@ conf_int <- round(correlation_result$conf.int, 3)
 
 
 # Draw a scatter plot
+
+# Note: The logic for the basic scatter plot and regression line was completed independently by me. The following challenging parts were solved with AI assistance:
+# 1. Choosing a color scheme for academic charts
+# 2. Optimizing transparency and point size
+# 3. Centering the title and setting standardized fonts
+## Prompt: How to use ggplot2 to set centered titles, standardize axis fonts, and match academic-friendly color schemes?
+
 ```{r}
 ggplot(d_rednote, aes(x = Appearance_Activity_Total, y = BSQ8A_Total)) +
 
@@ -68,10 +75,9 @@ ggplot(d_rednote, aes(x = Appearance_Activity_Total, y = BSQ8A_Total)) +
   geom_smooth(method = "lm", se = TRUE, color = "#1DA1F2", linewidth = 1.2) +
  
   labs(
-    title = "The Relationship Between the Frequency of Appearance-Related Activities on Xiaohongshu and the Level of Body Affectiveness",
-    subtitle = paste0("Pearson correlation coefficient r = ", r_value, ", p = ", p_value),
-    x = "Total score for frequency of participation in appearance-related activities",
-    y = "Total score of body intention distress(BSQ-8A)",
+    title = "RedNote Survey Scatter Plot",
+    x = "Appearance Activities Score",
+    y = "Body Image Distress (BSQ-8A)",
   ) +
   
   theme_minimal() +
@@ -80,9 +86,7 @@ ggplot(d_rednote, aes(x = Appearance_Activity_Total, y = BSQ8A_Total)) +
     plot.subtitle = element_text(size = 14, hjust = 0.5),
     axis.title = element_text(size = 12, face = "bold"),
     axis.text = element_text(size = 10)
-  ) +
-  
-  theme(panel.grid = element_line(alpha = 0.3))
+  )
 ```
 
 
