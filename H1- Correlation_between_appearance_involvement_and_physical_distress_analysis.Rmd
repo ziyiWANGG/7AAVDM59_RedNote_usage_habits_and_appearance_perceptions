@@ -65,6 +65,7 @@ conf_int <- round(correlation_result$conf.int, 3)
 # 1. Choosing a color scheme for academic charts
 # 2. Optimizing transparency and point size
 # 3. Centering the title and setting standardized fonts
+
 ## Prompt: How to use ggplot2 to set centered titles, standardize axis fonts, and match academic-friendly color schemes?
 
 ```{r}
