@@ -14,7 +14,7 @@ d_rednote <- read.csv('../data/RedNote_Survey.csv')
 ```
 
 # Hypothesis 3
-Users with high body image concerns are more likely to browse appearance-related content (weight loss/fitness).
+Users with high body image distress are more likely to browse appearance-related content (weight loss/fitness) on RedNote.
 
 ```{r}
 d_rednote <- d_rednote %>%
